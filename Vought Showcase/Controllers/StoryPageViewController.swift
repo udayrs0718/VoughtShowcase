@@ -15,14 +15,14 @@ class StoryPageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .black // Ensure background is black to match Instagram style
+        view.backgroundColor = .black
         setupImageViewConstraints()
     }
 
     private func setupImageView(with image: UIImage) {
         imageView = UIImageView(image: image)
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.contentMode = .scaleAspectFit // Changed to scaleAspectFit to prevent cropping
+        imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true // This ensures that any part of the image that overflows the bounds is clipped
         view.addSubview(imageView)
     }

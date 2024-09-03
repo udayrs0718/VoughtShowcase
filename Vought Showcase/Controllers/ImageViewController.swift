@@ -28,7 +28,7 @@ class ImageViewController: UIViewController {
         // Set image view properties
         imageView.contentMode = .scaleAspectFill
         imageView.image = UIImage(named: imageName)
-        imageView.clipsToBounds = true // This ensures that any part of the image that overflows the bounds is clipped
+        imageView.clipsToBounds = true
         
         // Add image view to view
         imageView.translatesAutoresizingMaskIntoConstraints = false

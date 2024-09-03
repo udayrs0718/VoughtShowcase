@@ -12,6 +12,7 @@
 		5AE3FA702C85E266009CB6BA /* FrenchieCarouselItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE3FA6F2C85E266009CB6BA /* FrenchieCarouselItem.swift */; };
 		5AE3FA722C85E318009CB6BA /* MotherMilkCarouselItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE3FA712C85E318009CB6BA /* MotherMilkCarouselItem.swift */; };
 		5AE3FA742C85FF7F009CB6BA /* StoryPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE3FA732C85FF7F009CB6BA /* StoryPageViewController.swift */; };
+		5AE3FA7A2C870161009CB6BA /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE3FA792C870161009CB6BA /* InitialViewController.swift */; };
 		5E1E353D2C623996000D7DEF /* UIViewController+AddChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E353C2C623996000D7DEF /* UIViewController+AddChild.swift */; };
 		5E1E353F2C6247C5000D7DEF /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E353E2C6247C5000D7DEF /* ImageViewController.swift */; };
 		5E1E35422C6248A6000D7DEF /* CarouselItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E35412C6248A6000D7DEF /* CarouselItem.swift */; };
@@ -58,6 +59,7 @@
 		5AE3FA6F2C85E266009CB6BA /* FrenchieCarouselItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrenchieCarouselItem.swift; sourceTree = "<group>"; };
 		5AE3FA712C85E318009CB6BA /* MotherMilkCarouselItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherMilkCarouselItem.swift; sourceTree = "<group>"; };
 		5AE3FA732C85FF7F009CB6BA /* StoryPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPageViewController.swift; sourceTree = "<group>"; };
+		5AE3FA792C870161009CB6BA /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		5E1E353C2C623996000D7DEF /* UIViewController+AddChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+AddChild.swift"; sourceTree = "<group>"; };
 		5E1E353E2C6247C5000D7DEF /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		5E1E35412C6248A6000D7DEF /* CarouselItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselItem.swift; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 				5E87DC732C6232430005D86C /* Main.storyboard */,
 				5E1E353E2C6247C5000D7DEF /* ImageViewController.swift */,
 				5AE3FA732C85FF7F009CB6BA /* StoryPageViewController.swift */,
+				5AE3FA792C870161009CB6BA /* InitialViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				5AE3FA6E2C85E1C5009CB6BA /* HughieCarouselItem.swift in Sources */,
 				5E1E35422C6248A6000D7DEF /* CarouselItem.swift in Sources */,
 				5AE3FA6C2C85E102009CB6BA /* ButcherCarouselItem.swift in Sources */,
+				5AE3FA7A2C870161009CB6BA /* InitialViewController.swift in Sources */,
 				5E1E353F2C6247C5000D7DEF /* ImageViewController.swift in Sources */,
 				5AE3FA702C85E266009CB6BA /* FrenchieCarouselItem.swift in Sources */,
 				5E87DC702C6232430005D86C /* SceneDelegate.swift in Sources */,

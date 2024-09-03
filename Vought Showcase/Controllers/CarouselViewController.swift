@@ -108,8 +108,23 @@ final class CarouselViewController: UIViewController {
         guard !items.isEmpty else {
             return
         }
-        let previousIndex = currentItemIndex == 0 ? items.count - 1 : currentItemIndex - 1
-        let direction: UIPageViewController.NavigationDirection = .reverse
+
+        let previousIndex: Int
+        let direction: UIPageViewController.NavigationDirection
+
+        // Check if we're at the first item
+        if currentItemIndex == 0 {
+            // If we're at the first item, stay on the first item and reset the progress bar
+            previousIndex = 0
+            direction = .reverse
+            progressBar.rewind() // Reset the progress bar to start again
+        } else {
+            // Otherwise, move to the previous item as usual
+            previousIndex = currentItemIndex - 1
+            direction = .reverse
+            progressBar.rewind() // Move the progress bar to the previous segment
+        }
+
         if let controller = getController(at: previousIndex) {
             pageViewController?.setViewControllers([controller], direction: direction, animated: true, completion: { completed in
                 if !completed {
@@ -117,7 +132,6 @@ final class CarouselViewController: UIViewController {
                 }
             })
             currentItemIndex = previousIndex
-            progressBar.rewind()
         }
     }
 

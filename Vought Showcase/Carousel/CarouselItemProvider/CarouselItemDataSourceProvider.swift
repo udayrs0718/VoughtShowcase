@@ -10,10 +10,10 @@ import Foundation
 class CarouselItemDataSourceProvider: CarouselItemDataSourceProviderType {
     func items() -> [CarouselItem] {
         return [
-            HomeLanderCarouselItem(),
-            MaeveCarouselItem(),
-            BlackNoirCarouselItem(),
-            ATrainCarouselItem(),
+            ButcherCarouselItem(),
+            HughieCarouselItem(),
+            FrenchieCarouselItem(),
+            MotherMilkCarouselItem(),
         ]
     }
 }

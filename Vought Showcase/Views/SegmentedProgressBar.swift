@@ -1,10 +1,3 @@
-//
-//  SegmentedProgressBar.swift
-//  Vought Showcase
-//
-//  Created by Burhanuddin Rampurawala on 07/08/24.
-//
-
 import Foundation
 import UIKit
 
@@ -164,6 +157,24 @@ class SegmentedProgressBar: UIView {
         prevSegment.topSegmentView.frame.size.width = 0
         self.animate(animationIndex: newIndex)
         self.delegate?.segmentedProgressBarChangedIndex(index: newIndex)
+    }
+    
+    /// Skips to a specific index in the progress bar.
+    /// - Parameter index: The index to skip to.
+    func skipToIndex(_ index: Int) {
+        guard index >= 0 && index < segments.count else { return }
+        
+        // Skip the current animation
+        let currentSegment = segments[currentAnimationIndex]
+        currentSegment.topSegmentView.layer.removeAllAnimations()
+        currentSegment.topSegmentView.frame.size.width = currentSegment.bottomSegmentView.frame.width
+        
+        // Set the new index
+        currentAnimationIndex = index
+        let targetSegment = segments[index]
+        targetSegment.topSegmentView.frame.size.width = targetSegment.bottomSegmentView.frame.width
+        
+        self.delegate?.segmentedProgressBarChangedIndex(index: index)
     }
 }
 

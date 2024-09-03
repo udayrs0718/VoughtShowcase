@@ -1,10 +1,3 @@
-//
-//  ImageViewController.swift
-//  Vought Showcase
-//
-//  Created by Burhanuddin Rampurawala on 06/08/24.
-//
-
 import UIKit
 
 class ImageViewController: UIViewController {
@@ -33,8 +26,9 @@ class ImageViewController: UIViewController {
     private func setupView() {
         
         // Set image view properties
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
         imageView.image = UIImage(named: imageName)
+        imageView.clipsToBounds = true
         
         // Add image view to view
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -42,10 +36,10 @@ class ImageViewController: UIViewController {
         
         // Set image view constraints
         NSLayoutConstraint.activate([
-            imageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            imageView.topAnchor.constraint(equalTo: view.topAnchor),
             imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            imageView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+            imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }
 }
